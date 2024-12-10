@@ -102,18 +102,20 @@ button:focus {
 
 /* Section Styles */
 .section {
-    margin: 20px 0;
+    margin: 10px auto; /* Adjust margin for better spacing */
     padding: 20px;
     border: 2px solid #acd1f1;
     border-radius: 8px;
     background-color: #ffffff;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 95%; /* Ensure sections occupy most of the screen width */
+    box-sizing: border-box;
 }
 
 .section h2 {
     text-align: center;
     color: #3498db;
-    font-size: 1.5rem;
+    font-size: 1.3rem; /* Adjusted font size for smaller screens */
     margin-bottom: 15px;
 }
 
@@ -142,18 +144,25 @@ button:focus {
 /* Mobile Design */
 @media (max-width: 768px) {
     .main-content {
+        margin-left: 0; /* Remove left margin for full-width content */
         padding: 10px;
     }
+
+    .section {
+        max-width: 95%; /* Ensure sections adapt to smaller screens */
+    }
+
     .hero-section {
         flex-direction: column;
         text-align: center;
     }
+
     .sidebar {
-        display: none;
+        display: none; /* Hide sidebar on mobile */
     }
 
     .menu-toggle {
-        display: block;
+        display: block; /* Show menu toggle for navigation */
     }
 
     .sidebar.open {
@@ -194,19 +203,9 @@ button:focus {
     }
 
     .footer {
-    margin-top: 30px;
-    text-align: center;
-    padding: 20px;
-    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
-    color: #333; /* Dark gray text for readability */
-    font-size: 0.9rem;
-    border-top: 3px solid #acd1f1; /* Light blue border at the top */
-    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow effect for better separation */
-}
-
-.footer p {
-    margin: 5px 0; /* Adding spacing between footer paragraphs */
-}
+        text-align: center;
+        padding: 20px;
+    }
 
     .menu-toggle {
         display: none;
