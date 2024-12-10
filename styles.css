@@ -15,10 +15,20 @@ a {
     text-decoration: none;
     transition: all 0.3s ease-in-out;
 }
+
 a:hover {
     color: #e74c3c;
     transform: scale(1.1);
 }
+
+textarea {
+    width: 100%; 
+    max-width: 95%; 
+    padding: 10px; 
+    box-sizing: border-box; 
+    border: 1px solid #ccc; 
+    border-radius: 5px; 
+    resize: none; }
 
 button {
     background-color: #3498db;
@@ -29,10 +39,12 @@ button {
     cursor: pointer;
     transition: all 0.3s ease-in-out;
 }
+
 button:hover {
     background-color: #2980b9;
     transform: translateY(-3px);
 }
+
 button:focus {
     outline: 2px solid #e74c3c;
 }
