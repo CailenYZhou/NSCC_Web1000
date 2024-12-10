@@ -22,13 +22,22 @@ a:hover {
 }
 
 textarea {
-    width: 100%; 
-    max-width: 95%; 
+    display: block;
+    width: 90%; 
+    max-width: 600px; 
+    margin: 0 auto; 
     padding: 10px; 
     box-sizing: border-box; 
     border: 1px solid #ccc; 
     border-radius: 5px; 
-    resize: none; }
+    resize: none; 
+}
+
+.message-box {
+    max-width: 100%; /* 父容器宽度适配屏幕 */
+    margin: 0 auto; /* 居中对齐 */
+    padding: 20px; /* 内边距 */
+}
 
 button {
     background-color: #3498db;
