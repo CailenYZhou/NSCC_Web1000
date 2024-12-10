@@ -1,0 +1,106 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Yuanyuan's portfolio website. Learn about my skills, mission, and vision as a professional web developer.">
+    <meta name="keywords" content="Web Developer, Portfolio, HTML, CSS, JavaScript, Programming, Skills">
+    <meta name="author" content="Yuanyuan Zhou">
+    <title>Yuanyuan's Portfolio</title>
+    <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+        
+        <div class="sidebar" id="sidebar">
+            <button class="close-menu" onclick="toggleMenu()">×</button>
+            <nav>
+                <a href="#">Home</a>
+                <a href="#skills">Skills</a>
+                <a href="#contact">Contact</a>
+                <a href="#resume">Resume</a>
+            </nav>
+        </div>
+
+        <div class="main-content">
+            <header class="header">
+                <div class="logo-section">
+                    <img src="logo.png" alt="Logo" class="logo">
+                    <h1 class="website-name">Yuanyuan's Website</h1>
+                </div>
+            </header>
+
+            <div id="hero" class="section hero-section">
+                <img src="picture.jpg" alt="Hero Image" class="hero-image">
+                <div class="hero-text">
+                    <h2>Welcome to My Portfolio</h2>
+                    <p>I am growing to be a professional web developer.</p>
+                    <a href="#contact" class="cta-button">Contact Me</a>
+                </div>
+            </div>
+
+            <!-- Skills Section -->
+            <div id="skills" class="section skills-section">
+                <h2>Skills</h2>
+                <div class="skill">
+                    <strong>Design Skills</strong><br>
+                    <span>
+                        - HTML & CSS<br>
+                        - Responsive Design<br>
+                        - Web Fundamentals<br>
+                        - Accessibility Practices
+                    </span>
+                </div>
+                <div class="skill">
+                    <strong>Programming Skills</strong><br>
+                    <span>
+                        - JavaScript & jQuery<br>
+                        - Python<br>
+                        - Database Management<br>
+                        - Debugging & Testing
+                    </span>
+                </div>
+            </div>
+
+            <div id="mission" class="section mission-section">
+                <h2>Mission and Vision</h2>
+                <p>My mission is to build great websites for everyone. My vision is accumulating web development experience.</p>
+            </div>
+
+            <div id="resume" class="section resume-section">
+                <h2>Resume</h2>
+                <a href="resume.pdf" class="resume-button" download>Download My Resume</a>
+            </div>
+
+            <div id="contact" class="section contact-section">
+                <h2>Messgae Box</h2>
+                <form action="https://formsubmit.co/your-email@example.com" method="POST">
+                    <!-- 重定向到感谢页面 -->
+                    <input type="hidden" name="_next" value="https://yourwebsite.com/thank-you.html">
+                    <!-- 禁用机器人提交 -->
+                    <input type="hidden" name="_captcha" value="false">
+                    
+                    <label for="user-message">Your Message:</label><br>
+                    <textarea id="user-message" name="user-message" rows="4" cols="50" placeholder="Write your message here..."></textarea><br><br>
+                    <button type="submit" class="submit-button">Send Message</button>
+                </form>
+                
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <p>Telephone: xxx-xxx-xxxx</p>
+        <p>Address: xxxx street</p>
+        <p>&copy; 2024 Yuanyuan. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            document.getElementById('sidebar').classList.toggle('open');
+        }
+    </script>
+</body>
+</html>
